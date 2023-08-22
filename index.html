@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cuestionario De Prueba</h1>
+        <p>Marca La Respuesta Correcta Sobre Algunas Capitales De Colombia</p>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1 - ¿Cual Es La Capital De Antioquia?</h3>
+            <label for="">
+            <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Medellin
+            </label>
+            <label for="">
+            <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Bogota
+            </label>
+            <label for="">
+            <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Popayan
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2 - ¿Cual Es La Capital De Valle Del Cauca?</h3>
+            <label for="">
+            <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Medellin
+            </label>
+            <label for="">
+            <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Cali
+            </label>
+            <label for="">
+            <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Leticia
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3 - ¿Cual Es La Capital Del Choco?</h3>
+            <label for="">
+            <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Risaralda
+            </label>
+            <label for="">
+            <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Bogota
+            </label>
+            <label for="">
+            <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Quibdo
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4 - ¿Cual Es La Capital De Cordoba?</h3>
+            <label for="">
+            <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Barranquilla
+            </label>
+            <label for="">
+            <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">Monteria
+            </label>
+            <label for="">
+            <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">Cartagena
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5 - ¿Cual Es La Capital De Atlantico?</h3>
+            <label for="">
+            <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Bucaramanga
+            </label>
+            <label for="">
+            <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Rio Hacha
+            </label>
+            <label for="">
+            <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Barranquilla
+            </label>
+        </section>
+           
+        <button onclick="enviar()">Enviar</button>
+        <h2>Respuestas correctas: <span id="resultado"></span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
